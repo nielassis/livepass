@@ -2,7 +2,7 @@ export const eventsListQueryJsonSchema = {
   type: 'object',
   properties: {
     name: { type: 'string' },
-    date: { type: 'date' },
+    date: { type: 'string' },
     isFree: { type: 'boolean' },
 
     page: {
