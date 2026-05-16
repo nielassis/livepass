@@ -10,10 +10,11 @@
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "postinstall": "prisma generate",
     "generate": "prisma generate",
-    "build": "npm run generate && tsc"
+    "build": "npm run generate && tsc",
+    "seed": "ts-node src/scripts/seed.ts"
   },
   "prisma": {
-    "seed": "ts-node src/scripts/seed.ts"
+    "seed": "ts-node backend/src/scripts/seed.ts"
   },
   "dependencies": {
     "@fastify/cors": "^11.2.0",
